@@ -57,7 +57,7 @@ class LoginController extends Controller
             // Authentication passed...
             return redirect()->route('admin.home');
         }
-        return redirect()->route('login',['error'=>'erro_login']);
+        return redirect()->route('login.login',['error'=>'erro_login']);
     }
 
 //    public function loginIn(Request $request){

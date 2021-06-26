@@ -18,7 +18,7 @@
 Route::get('/', 'SiteController@index')->name('SiteHomePage.index');
 Route::get('/loja', 'LojaController@index')->name('store.index');
 
-Route::group(['middleware' => 'auth.basic'], function() {
+Route::group(['middleware' => 'auth'], function() {
     Route::prefix('admin')->name('admin.')->namespace('Admin')->group(function (){
 
         Route::get('/','HomeController@index')->name('home');
@@ -43,16 +43,21 @@ Route::group(['middleware' => 'auth.basic'], function() {
     });
 });
 
-Route::get('/login', 'Auth\LoginController@index')->name('login');
-Route::post('/login', 'Auth\LoginController@authenticate')->name('login');
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
-Route::get('/register', 'Auth\RegisterController@index')->name('register');
-Route::post('/register', 'Auth\RegisterController@create')->name('register');
-Route::get('/forget', 'Auth\ResetPasswordController@index')->name('forget');
-Route::get('/teste-session', function (\Illuminate\Http\Request $request){
-    var_dump($request->session());
-    exit();
-})->name('testeSession');
-//Auth::routes();
+/* controle seesão */
+/* INICIO */
+Route::prefix('login')->name('login.')->group(function (){
+//    Route::get('/', 'Auth\LoginController@index')->name('login');
+    Route::get('/', 'Auth\LoginController@index')->name('login');
+    Route::post('/', 'Auth\LoginController@authenticate')->name('login');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::prefix('register')->name('register.')->group(function (){
+    Route::get('/', 'Auth\RegisterController@index')->name('register');
+    Route::post('/', 'Auth\RegisterController@create')->name('register');
+});
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/forget', 'Auth\ResetPasswordController@index')->name('forget');
+//Auth::routes();
+/* FIM */
+
