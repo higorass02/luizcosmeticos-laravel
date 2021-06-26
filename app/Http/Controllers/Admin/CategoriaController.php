@@ -13,7 +13,7 @@ class CategoriaController extends BaseController
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function create()
+    public function index()
     {
         //$stores = Store::all(['id','name']);
         //return view('admin.products.create',compact('stores'));
