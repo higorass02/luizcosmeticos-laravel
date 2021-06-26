@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="121a6229-0cc5-457c-96d1-e47f975069c7" name="Default Changelist" comment="" />
+    <list default="true" id="121a6229-0cc5-457c-96d1-e47f975069c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LojaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Site/store.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/ordenacao.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sub_categoria.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sub_marca.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/sub_price.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Base/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Base/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,6 +123,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1tmXjVXDvapyTEsNTDpgXHhJDF1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,8 +139,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views\components" />
-      <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views" />
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\app\Http\Controllers" />
+      <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views\Site" />
@@ -146,11 +160,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623375373936</updated>
-      <workItem from="1623375376561" duration="7207000" />
+      <workItem from="1623375376561" duration="7891000" />
+      <workItem from="1624321619542" duration="1820000" />
+      <workItem from="1624364772522" duration="204000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -15,4 +15,5 @@
 //    return view('welcome');
 //});
 
-Route::get('/', 'HomeController@index')->name('homepage.index');
+Route::get('/', 'HomeController@index')->name(''homepage.index111112'');
+Route::get('/loja', 'LojaController@index')->name('store.index');

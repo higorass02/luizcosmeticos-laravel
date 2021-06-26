@@ -36,16 +36,16 @@
                     <!-- LOGO -->
                     <div class="col-md-3">
                         <div class="header-logo">
-                            <a href="#" class="logo">
+                            <a href="{{Route('homepage.index')}}" class="logo">
                                 <img src="./img/logo_luiz.png" alt="">
                             </a>
                         </div>
-
                     </div>
                     <!-- /LOGO -->
                     <!-- ACCOUNT -->
                     <div class="col-md-3 clearfix">
                         <div class="header-ctn">
+
                             <!-- Menu Toogle -->
                             <div class="menu-toggle">
                                 <a href="#">
@@ -70,13 +70,17 @@
             <!-- responsive-nav -->
             <div id="responsive-nav">
                 <!-- NAV -->
-                <ul class="main-nav nav navbar-nav">
+
+
+
+                <ul class="main-nav nav navbar-nav">'
                     <li class="active"><a href="{{route('homepage.index')}}">Home</a></li>
                     <li class=""><a href="#ofertas">Ofertas</a></li>
                 </ul>
                 <!-- /NAV -->
             </div>
             <!-- /responsive-nav -->
+
         </div>
         <!-- /container -->
     </nav>
