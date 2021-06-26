@@ -3,7 +3,7 @@
 @section('content')
     <h1>Cadastrar Categoria</h1>
 
-    <form action="{{route('admin.categoria.store')}}" method="post">
+    <form action="{{route('admin.categorias.store')}}" method="post">
         @csrf
 
         <div class="form-group">
@@ -19,15 +19,6 @@
         <div class="form-group">
             <label for="">Slug:</label>
             <input class="form-control" type="text" name="slug" id="slug">
-        </div>
-
-        <div class="form-group">
-            <label for="">Usuário:</label>
-            <select class="form-control" name="user" id="">
-                @foreach($users as $user)
-                    <option value="{{$user->id}}">{{$user->name}}</option>
-                @endforeach
-            </select>
         </div>
 
         <div class="form-group">

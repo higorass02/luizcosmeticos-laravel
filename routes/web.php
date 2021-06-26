@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth'], function() {
 
         Route::get('/','HomeController@index')->name('home');
 
-        Route::prefix('categoria')->name('categoria.')->group(function (){
+        Route::prefix('categorias')->name('categorias.')->group(function (){
             Route::get('/','CategoriaController@index')->name('index');
             Route::get('/create','CategoriaController@create')->name('create');
             Route::post('/create','CategoriaController@store')->name('store');

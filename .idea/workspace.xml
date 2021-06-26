@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121a6229-0cc5-457c-96d1-e47f975069c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Categorias.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categorias/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categorias/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categorias/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categorias/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categorias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categorias/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,17 +136,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\app" />
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\app\Http\Controllers\Admin" />
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views" />
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\app\Http\Controllers" />
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\database\seeds" />
-      <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\resources\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Higor\ProjetosLaravel\luizcosmeticos\app\Http\Controllers\Admin" />
@@ -162,7 +170,7 @@
       <workItem from="1623375376561" duration="7891000" />
       <workItem from="1624321619542" duration="1820000" />
       <workItem from="1624364772522" duration="204000" />
-      <workItem from="1624669806555" duration="19614000" />
+      <workItem from="1624669806555" duration="22708000" />
     </task>
     <servers />
   </component>
