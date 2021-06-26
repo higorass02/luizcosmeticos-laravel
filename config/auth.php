@@ -2,6 +2,10 @@
 
 return [
 
+    'freeusers' => [
+      'admin@email.com'
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults

@@ -36,10 +36,25 @@
                     <!-- LOGO -->
                     <div class="col-md-3">
                         <div class="header-logo">
-                            <a href="{{Route('homepage.index')}}" class="logo">
+                            <a href="{{Route('SiteHomePage.index')}}" class="logo">
                                 <img src="./img/logo_luiz.png" alt="">
                             </a>
                         </div>
+
+{{--                        @if (Route::has('login'))--}}
+                            <div class="top-right links">
+                                @auth
+                                    <a href="{{ url('/home') }}">Home</a>
+                                @else
+                                    <a href="{{ route('login') }}">Login</a>
+
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}">Register</a>
+                                    @endif
+                                @endauth
+                            </div>
+{{--                        @endif--}}
+
                     </div>
                     <!-- /LOGO -->
                     <!-- ACCOUNT -->
@@ -74,7 +89,7 @@
 
 
                 <ul class="main-nav nav navbar-nav">'
-                    <li class="active"><a href="{{route('homepage.index')}}">Home</a></li>
+                    <li class="active"><a href="{{route('SiteHomePage.index')}}">Home</a></li>
                     <li class=""><a href="#ofertas">Ofertas</a></li>
                 </ul>
                 <!-- /NAV -->
