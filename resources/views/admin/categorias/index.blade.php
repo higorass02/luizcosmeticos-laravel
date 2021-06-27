@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <a href="{{route('admin.categorias.create')}}" class="btn btn-success btl-lg">Criar Produto</a>
+    <a href="{{route('admin.categorias.create')}}" class="btn btn-success btl-lg">Criar Categoria</a>
     <table class="table table-striped">
         <thead>
             <tr>

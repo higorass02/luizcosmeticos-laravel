@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Editar Loja</h1>
+    <h1>Editar Categoria</h1>
 
     <form action="{{route('admin.categorias.update',['categoria'=>$categoria->id])}}/" method="post">
         <input type="hidden" value="{{csrf_token()}}" name="_token">
