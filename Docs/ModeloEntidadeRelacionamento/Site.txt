@@ -1,0 +1,30 @@
+https://app.creately.com/diagram/Yo8i4oBjsYn/edit
+=================================================
+Produto
+
+nome
+descricao
+marca
+preco
+preco_anterior
+quantidaded
+qualidade
+desconto
+novo
+=================================================
+Produto = Possuir = Categoria
+=================================================
+Categoria
+
+nome
+descricao
+slug
+=================================================
+Produto = Conter = Fotos
+=================================================
+Fotos
+
+nome
+local
+status
+=================================================
