@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Product;
+use Carbon\Carbon;
+use http\Client\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -42,23 +44,32 @@ class ProductController extends BaseController
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(\Illuminate\Http\Request $request)
     {
-        $data = $request->all();
-
-        $store = Store::find($data['store']);
-
-        $new_prod= new Store();
-        $new_prod->name = $data['name'];
-        $new_prod->description = $data['description'];
-        $new_prod->body = $data['body'];
-        $new_prod->price = $data['price'];
-        $new_prod->slug = $data['slug'];
-
-        $store = $store->product()->save($new_prod);
-
-        flash('Produto Criado com Sucesso')->success();
-        return redirect()->route('admin.products.index');
+        $dados = $request->request->all();
+        $files = $request->files->all();
+        if($request->file('photo')->isValid()){
+            //$request->file('photo')->store('produtos');
+            $nameFile = 'file_'.Carbon::now()->format('d_m_Y_(h-i-s)').'_'.$request->photo->getClientOriginalName();
+            $request->file('photo')->storeAs('produtos',$nameFile);
+        }
+//        dd($files);
+        exit();
+//        $data = $request->all();
+//
+//        $store = Store::find($data['store']);
+//
+//        $new_prod= new Store();
+//        $new_prod->name = $data['name'];
+//        $new_prod->description = $data['description'];
+//        $new_prod->body = $data['body'];
+//        $new_prod->price = $data['price'];
+//        $new_prod->slug = $data['slug'];
+//
+//        $store = $store->product()->save($new_prod);
+//
+//        flash('Produto Criado com Sucesso')->success();
+//        return redirect()->route('admin.products.index');
     }
 
     /**

@@ -32,13 +32,13 @@ Route::group(['middleware' => 'auth'], function() {
             Route::get('/destroy/{categoria}','CategoriaController@destroy')->name('destroy');
         });
 
-        Route::prefix('products')->name('products.')->group(function (){
+        Route::prefix('produtos')->name('produtos.')->group(function (){
             Route::get('/','ProductController@index')->name('index');
             Route::get('/create','ProductController@create')->name('create');
             Route::post('/create','ProductController@store')->name('store');
-            Route::get('/{product}/edit','ProductController@edit')->name('edit');
-            Route::post('/update/{product}','ProductController@update')->name('update');
-            Route::get('/destroy/{product}','ProductController@destroy')->name('destroy');
+            Route::get('/{produto}/edit','ProductController@edit')->name('edit');
+            Route::post('/update/{produto}','ProductController@update')->name('update');
+            Route::get('/destroy/{produto}','ProductController@destroy')->name('destroy');
         });
     });
 });

@@ -3,7 +3,7 @@
 @section('content')
     <h1>Cadastrar Produto</h1>
 
-    <form action="{{route('admin.products.store')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.produtos.store')}}" method="post" enctype="multipart/form-data">
         @csrf
 
         <div class="form-group">
@@ -29,15 +29,6 @@
                 <option value="3">3 Estrelas</option>
                 <option value="4">4 Estrelas</option>
                 <option value="5">5 Estrelas</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="">Usuário</label>
-            <select class="form-control" name="user" id="">
-{{--                @foreach($users as $user)--}}
-{{--                    <option value="{{$user->id}}">{{$user->name}}</option>--}}
-{{--                @endforeach--}}
             </select>
         </div>
 
