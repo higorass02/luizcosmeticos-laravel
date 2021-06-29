@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <a href="{{route('admin.stores.create')}}" class="btn btn-success btl-lg">Criar Produto</a>
+    <a href="{{route('admin.produtos.create')}}" class="btn btn-success btl-lg">Criar Produto</a>
     <table class="table table-striped">
         <thead>
             <tr>

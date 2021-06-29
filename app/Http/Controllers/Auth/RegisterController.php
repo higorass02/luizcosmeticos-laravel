@@ -80,7 +80,7 @@ class RegisterController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
             ]);
-            return Route('admin.categorias.index');
+            return redirect()->route('admin.home');
         }catch(\Exception $err){
             return new JsonResponse('Erro ao registrar usuario','402');
             //return new JsonResponse($err->getMessage(),'402');

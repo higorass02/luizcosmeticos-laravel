@@ -138,7 +138,7 @@ class LojaController extends BaseController
         );
 
         return view('Site.store',[
-            'produtos' => $produtos,
+            'products' => $produtos,
         ]);
     }
 }

@@ -8,18 +8,28 @@
 
         <div class="form-group">
             <label for="">Nome:</label>
-            <input class="form-control" type="text" name="name" id="name">
+            <input class="form-control" type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Descrição:</label>
+            <input class="form-control" type="text" name="desc" id="desc">
         </div>
 
         <div class="form-group">
             <label for="">Preço:</label>
-            <input class="form-control" type="text" name="name" id="name">
+            <input class="form-control" type="text" name="preco" id="preco" required>
         </div>
 
         <div class="form-group">
             <label for="">Categoria:</label>
-            <input class="form-control" type="text" name="phone" id="phone">
+            <select name="categorias[]" id="categorias" class="form-control" multiple required>
+                @foreach($categorias as $categoria)
+                    <option value="{{$categoria->id}}"> {{ $categoria->name }} - {{$categoria->description}}</option>
+                @endforeach
+            </select>
         </div>
+
 
         <div class="form-group">
             <label for="">Estrelas</label>
@@ -43,4 +53,9 @@
             </button>
         </div>
     </form>
+
+@endsection
+
+@section('javascript')
+    <script src="{{ asset('js/admin/products/create.js').'?'.config('app.asset_cache') }}"></script>
 @endsection

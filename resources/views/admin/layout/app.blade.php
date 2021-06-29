@@ -7,11 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marketplace L6</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.css">
+
 </head>
 <body>
 <div class="container">
     @include('flash::message')
     @yield('content')
 </div>
+
+@section('js')
+@endsection
+
 </body>
 </html>

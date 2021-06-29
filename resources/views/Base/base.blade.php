@@ -48,9 +48,9 @@
                                 @else
                                     <a href="{{ route('login.login') }}">Login</a>
 
-{{--                                    @if (Route::has('register.register'))--}}
-{{--                                        <a href="{{ route('register.register') }}">Register</a>--}}
-{{--                                    @endif--}}
+                                    @if (Route::has('register.register'))
+                                        <a href="{{ route('register.register') }}">Register</a>
+                                    @endif
                                 @endauth
                             </div>
 {{--                        @endif--}}
@@ -220,6 +220,9 @@
     <script src="js/nouislider.min.js"></script>
     <script src="js/jquery.zoom.min.js"></script>
     <script src="js/main.js"></script>
+
+    @section('js')
+    @endsection
 
     <div>
         @yield('js')

@@ -13,9 +13,18 @@ class CreateTableProduto extends Migration
      */
     public function up()
     {
-        Schema::create('table_produto', function (Blueprint $table) {
+        Schema::create('produtos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+
+            $table->string('name');
+            $table->string('description');
+            $table->decimal('price',10,2);
+            $table->integer('estrelas');
+            $table->string('imagem')->nullable();
+
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -26,6 +35,6 @@ class CreateTableProduto extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_produto');
+        Schema::dropIfExists('produtos');
     }
 }
